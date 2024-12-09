@@ -7,6 +7,7 @@ cls
 cd /d "%~dp0"
 
 
+:: Home page
 title NCleaning
 cls
 echo NCleaning
@@ -16,6 +17,7 @@ echo Press Alt + F4 to exit.
 pause > nul
 
 
+:: Clean
 title Cleaning - NCleaning
 cls
 del /f /s /q "%systemdrive%\*.tmp"
@@ -31,10 +33,10 @@ del /f /s /q "%userprofile%\local settings\temporary internet files\*.*"
 del /f /s /q "%userprofile%\local settings\temp\*.*"
 
 
-
+:: Finish page
 title Finish - NCleaning
 cls
-echo NCleaning > Finish
+echo NCleaning / Finish
 echo ----------------------
 echo Clean is finish.
 echo Thank you.
