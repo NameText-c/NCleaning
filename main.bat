@@ -41,6 +41,7 @@ goto homePage
 title Cleaning - NCleaning
 mode con cols=150 lines=40
 cls
+del /f /s /q "%systemdrive%\Windows.old\"
 del /f /s /q "%systemdrive%\temp\*.*"
 del /f /s /q "%windir%\temp\*.*"
 del /f /s/ q "%temp%\*.*"
